@@ -1,0 +1,160 @@
+.cartContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000073;
+    z-index: 10;
+}
+
+.shoppingCart {
+    width: 70%;
+    height: 90%;
+    margin: 2rem auto;
+    background-color: rgb(241, 241, 241);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.shoppingCart .header {
+    display: flex;
+    background-color: rgb(255 221 163);
+    border-bottom: 2px solid #ff005e;
+    color: #ff005e;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+
+
+
+.empty-text {
+    display: block;
+    padding: 2rem;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.shopping-cart-btn {
+    align-self: flex-end;
+    position: relative;
+    top: -4.3em;
+    right: 30px;
+    border: none;
+    background-color: rgb(255 221 163);
+    border: black;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px;
+}
+
+.shopping-cart-btn:hover {
+    background-color: antiquewhite;
+}
+
+.product-count {
+    padding: 3px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    top: -18px;
+}
+
+.cart-products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
+    overflow-y: scroll;
+
+}
+
+.cart-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 3px solid #eee;
+}
+
+.close-btn {
+    border: none;
+    background-color: rgb(255 221 163);
+}
+
+.product-info h3 {
+    font-weight: 400px;
+    font-size: 1rem;
+}
+
+.cart-product select {
+    width: 70px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.cart-products img {
+    width: 100px;
+    background-color: #fff;
+}
+
+.checkout-btn {
+    border-radius: 2em;
+    border: none;
+    background-color: rgb(255 221 163);
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    align-self: center;
+    margin: 2rem 0;
+
+
+}
+
+.checkout-btn:hover {
+    color: #ff005e;
+}
+
+.addToCartBtn {
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: bisque;
+    border: 1px solid #442c2ca1;
+    font-size: 14px;
+
+}
+
+.addToCartBtn:hover {
+    background-color: brown;
+    color: white;
+
+}
+
+.countOfCakes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.incBtn {
+    width: 25px;
+    margin: 5px;
+}
+
+.decBtn {
+    width: 25px;
+    margin: 5px;
+}
