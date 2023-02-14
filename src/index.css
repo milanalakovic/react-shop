@@ -5,6 +5,24 @@
 .allCakes {
     display: flex;
     flex-direction: column;
+    transition: background 300ms ease-in 200ms;
+    position: relative;
+    isolation: isolate;
+    min-height: 100vh;
+}
+
+
+.allCakes::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: .9;
+    background: red;
+    background-image: url("https://images.unsplash.com/photo-1612198791461-e26e3b5dcb86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80");
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
 .cakeContainer {
@@ -20,12 +38,12 @@
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255 221 163);
+    background: #ffffff82;
+    color: brown;
     font-size: 1.5em;
-    border-bottom: 2px solid;
-    color: #ff005e;
     padding: 0 2.2em;
     height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .navLinks {
@@ -35,27 +53,39 @@
     padding-right: 3em;
 }
 
+.navTitle {
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
 .navLinks a {
     text-decoration: none;
     padding: 4px 10px;
-    color: #fd3535;
+    color: #000000;
     margin: 5px;
 }
 
 .navLinks a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(155, 43, 43);
 }
 
 .cakesTitle {
-    color: #ff005e;
-    font-size: 3.5em;
+    color: #ffffffe0;
+    font-size: 4em;
+    padding: 10px;
+    border-radius: 1em;
     margin-left: 3em;
+    font-weight: bold;
+    background-color: #ff5151;
+    border-radius: 50px 20px 50px 20px;
+
 }
 
 .cakesHeader {
     display: flex;
     align-items: center;
-    margin-top: 3.5em;
+    margin-top: 1em;
     margin-bottom: 1.8em;
 }
 
@@ -78,14 +108,25 @@
     box-shadow: rgba(0, 0, 0, 0.315) 0px 7px 29px 0px;
 }
 
+.cakeImgContainer {
+    overflow: hidden;
+    width: 100%;
+}
+
 .cakeImg {
     margin-bottom: 15px;
     height: 200px;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.7s ease;
+}
+
+.cakeImg:hover {
+    transform: scale(1.1);
 
 }
+
 
 .cakeTitle {
     font-size: 1.5em;
@@ -98,13 +139,20 @@
     color: rgb(77, 77, 77);
 }
 
+.readMoreBtn {
+    width: 100%;
+}
+
 .cakeBtn {
     border: none;
-    width: 10em;
+    width: 100%;
     height: 2em;
     border-radius: 3px;
     font-size: 14px;
-    background-color: blanchedalmond;
+    background-color: #fff5e6;
+    color: brown;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
@@ -112,6 +160,7 @@
     background-color: brown;
     color: white;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .previewDescription {
@@ -130,6 +179,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
@@ -188,23 +238,31 @@
     margin-right: 10em;
     margin-bottom: 2em;
     height: 35px;
-    border-radius: 2em;
+    border-radius: 5px;
     padding-left: 15px;
-    border: 2px solid #ff005e;
+    border: 1.5px solid #9d9d9d;
     outline: none;
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif\, Times, serif;
+    font-style: italic;
+    color: rgb(59, 59, 59);
 }
 
 .sortAndFilter {
-    display: initial;
+    display: flex;
     margin-left: auto;
     padding-top: 5em;
 }
+
+
 
 .labelForSort {
     margin-bottom: 2em;
     margin-right: 1em;
     font-size: 1.2em;
     color: rgb(58, 58, 58);
+    position: relative;
+    top: 5px;
 }
 
 .sortCakes {
@@ -212,14 +270,25 @@
     margin-right: 6em;
     margin-bottom: 2em;
     height: 35px;
-    border-radius: 2em;
+    border-radius: 5px;
     padding-left: 15px;
-    border: 2px solid #ff005e;
+    border: 1.5px solid #9d9d9d;
     outline: none;
     color: rgb(58, 58, 58);
     cursor: pointer;
+    background: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, serif\, Times, serif;
+
 
 }
+
+
+.sortCakes option {
+    background: rgba(211, 211, 211, 0.582);
+}
+
+
+
 
 
 

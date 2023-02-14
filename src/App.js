@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./Navbar";
-import Create from "./Create";
 import CakeDetails from "./CakeDetails";
 import Cakes from "./Cakes";
 
@@ -13,7 +12,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cakes" element={<Cakes />} />
-          <Route path="/create" element={<Create />} />
           <Route path="/cakes/:id" element={<CakeDetails />} />
         </Routes>
       </Router>

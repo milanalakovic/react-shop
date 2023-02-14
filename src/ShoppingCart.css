@@ -19,17 +19,17 @@
     display: flex;
     flex-direction: column;
     position: relative;
+
 }
 
 .shoppingCart .header {
     display: flex;
-    background-color: rgb(255 221 163);
-    border-bottom: 2px solid #ff005e;
-    color: #ff005e;
+    background: #ffffff82;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #343434;
     padding: 10px 20px;
     justify-content: space-between;
 }
-
 
 
 
@@ -44,16 +44,17 @@
     align-self: flex-end;
     position: relative;
     top: -4.3em;
-    right: 30px;
+    right: 55px;
     border: none;
-    background-color: rgb(255 221 163);
+    background-color: rgb(255 221 163 / 3%);
     border: black;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 12px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    cursor: pointer;
 }
 
 .shopping-cart-btn:hover {
-    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px, rgba(0, 0, 0, 0.45) 0px 1px 2px;
 }
 
 .product-count {
@@ -73,8 +74,6 @@
     padding: 1rem 0;
     width: 80%;
     margin: 0 auto;
-    overflow-y: scroll;
-
 }
 
 .cart-product {
@@ -89,8 +88,7 @@
 }
 
 .close-btn {
-    border: none;
-    background-color: rgb(255 221 163);
+    cursor: pointer;
 }
 
 .product-info h3 {
@@ -118,6 +116,7 @@
     color: #fff;
     align-self: center;
     margin: 2rem 0;
+    cursor: pointer;
 
 
 }
@@ -130,17 +129,26 @@
     width: 10em;
     height: 2em;
     border: none;
-    background-color: bisque;
-    border: 1px solid #442c2ca1;
+    background-color: #ff5151;
+    color: white;
     font-size: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 50px 20px 50px 20px;
+    transition: 0.6s ease;
 
 }
+
 
 .addToCartBtn:hover {
-    background-color: brown;
     color: white;
-
+    background-color: brown;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+
+
 
 .countOfCakes {
     display: flex;
