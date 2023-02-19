@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoIosCart } from "react-icons/io";
-import ShoppingCart from "./ShoppingCart.js";
+import ShoppingCart from "./ShoppingCart/ShoppingCart.js";
 
 
 

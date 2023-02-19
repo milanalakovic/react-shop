@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import './CakeDetails.css';
-import { useState, useEffect } from "react";
+import './CakeDetails/CakeDetails';
 
 
 const Navbar = () => {

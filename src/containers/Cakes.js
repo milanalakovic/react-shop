@@ -1,6 +1,5 @@
-import CakeDetails from "./CakeDetails";
-import CakeList from "./CakeList";
-import useFetch from "./useFetch";
+import CakeList from "../components/CakeList";
+import useFetch from "../useFetch";
 
 const Home = () => {
     const { data: cakes, isPending, error } = useFetch('http://localhost:8000/cakes');

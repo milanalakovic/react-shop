@@ -26,11 +26,16 @@
 }
 
 .cakeContainer {
+    max-width: 90%;
+    margin-left: auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
-    margin: auto;
     justify-content: space-between;
+    align-self: center;
+}
+
+.cakeContainer:last-child {
+    margin-right: auto;
 }
 
 .navbar {
@@ -99,7 +104,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 25px;
+    margin: 4%;
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -288,19 +293,19 @@
 }
 
 
-
-
-
-
-
-@media only screen and (max-width:1210px) {
+@media only screen and (max-width:1350px) {
     .cakeContainer {
-        max-width: 80%;
-        justify-content: space-around;
+        max-width: 70%;
     }
 }
 
-@media only screen and (max-width:1000px) {
+
+@media only screen and (max-width:1042px) {
+
+    .cakeContainer {
+        max-width: 70%;
+        justify-content: center;
+    }
 
     .cakesHeader {
         display: flex;

@@ -1,11 +1,10 @@
 import React from 'react'
-import ImageSlider from './ImageSlider'
-import { SliderImages } from './SliderImages'
-import CakeList from "./CakeList";
+import ImageSlider from '../components/ImageSlider'
+import { SliderImages } from '../assets/SliderImages'
 
 
 
-function Home({ cakes }) {
+function Home() {
     return (
         <div>
             <div>

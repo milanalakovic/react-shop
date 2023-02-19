@@ -160,9 +160,15 @@
 .incBtn {
     width: 25px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .decBtn {
     width: 25px;
     margin: 5px;
+    cursor: pointer;
+}
+
+.remove-btn {
+    cursor: pointer;
 }
