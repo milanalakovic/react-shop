@@ -24,7 +24,7 @@ A simple online shop app created with React
 
 *To watch the server/db.json file*
 
-**npx json-server --watch data/db.json --port 8000**
+**npx json-server --watch src/assets/data/db.json --port 8000**
 
 *Then start the React app*
 
